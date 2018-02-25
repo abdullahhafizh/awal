@@ -9,6 +9,8 @@
     ],
     "description": "My first Composer project",
     "minimum-stability": "stable",
+    "type": "library",
+    "keywords": ["example", "first-project", "for-study", "sample", "test", "tutorial"],
     "require": {
         "php": "^5.3.2 || ^7.0",
         "ext-curl": "*",
