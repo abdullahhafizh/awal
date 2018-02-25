@@ -6,6 +6,8 @@
             "email": "abdllhhafizh@gmail.com"
         }
     ],
+    "description": "My first Composer project",
+    "minimum-stability": "dev",
     "require": {
         "php": "^5.3.2 || ^7.0",
         "ext-curl": "*",
