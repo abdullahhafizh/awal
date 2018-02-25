@@ -1,0 +1,54 @@
+"repositories": [
+    {
+        "type": "package",
+        "package": {
+            "name": "abdullahhafizh/awal",
+            "authors": [
+                {
+                    "name": "Abdullah Hafizh",
+                    "email": "abdllhhafizh@gmail.com"
+                }
+            ],            
+            "version": "dev-master",
+            "source": {
+                "url": "git://github.com/abdullahhafizh/awal.git",
+                "type": "git",
+                "reference": "master"
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0",
+                "ext-curl": "*",
+                "composer-plugin-api": "^1.0.0"
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0",
+                "ext-curl": "*",
+                "composer-plugin-api": "^1.0.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.0",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "scripts": {
+                "test": "phpunit --colors=always",
+                "fasttest": "phpdbg -qrr vendor/bin/phpunit --colors=always",
+                "lint": "phpcs",
+                "fmt": "phpcbf"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Abdullahhafizh\\Awal\\": "src/"
+                }
+            },
+            "extra": {
+                "class": "Abdullahhafizh\\Awal\\Plugin"
+            },
+            "config": {
+                "platform": {
+                    "php": "5.3.29"
+                }
+            }
+        }
+    }
+],

@@ -1,0 +1,11 @@
+{
+  "name": "abdullahhafizh-awal",
+  "scripts": {
+    "test": "vendor/bin/phpunit --colors=always",
+    "start": "gulp start"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1"
+  }
+}
