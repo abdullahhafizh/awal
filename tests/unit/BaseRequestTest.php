@@ -1,5 +1,5 @@
 <?php
-namespace Abdullahhafizh\Awal;
+namespace Hirak\Prestissimo;
 
 class BaseRequestTest extends \PHPUnit_Framework_TestCase
 {

@@ -13,7 +13,7 @@ php:
 
 before_install:
   - composer config -g repositories.packagist path $(pwd)
-  - composer global require 'abdullahhafizh/awal:@dev'
+  - composer global require 'hirak/prestissimo:@dev'
   - composer config -g --unset repositories.packagist
 
 install:

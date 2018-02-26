@@ -1,8 +1,9 @@
 <?php
 /*
- * @author Abdullah Hafizh
+ * @author Hiraku NAKANO
+ * @license MIT https://github.com/hirak/prestissimo
  */
-namespace Abdullahhafizh\Awal;
+namespace Hirak\Prestissimo;
 
 use Composer\Package;
 

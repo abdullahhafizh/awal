@@ -1,5 +1,5 @@
 <?php
-namespace Abdullahhafizh\Awal;
+namespace Hirak\Prestissimo;
 
 class CurlMultiTest extends \PHPUnit_Framework_TestCase
 {
@@ -17,7 +17,7 @@ class CurlMultiTest extends \PHPUnit_Framework_TestCase
     public function testRequestSuccess()
     {
         $tmpfile = tmpfile();
-        $reqp = $this->prophesize('Abdullahhafizh\Awal\CopyRequest');
+        $reqp = $this->prophesize('Hirak\Prestissimo\CopyRequest');
         $reqp->getCurlOptions()->willReturn(array(
             CURLOPT_URL => 'file://' . __DIR__ . '/test.txt',
             CURLOPT_FILE => $tmpfile,
@@ -46,7 +46,7 @@ class CurlMultiTest extends \PHPUnit_Framework_TestCase
     public function testWait()
     {
         $tmpfile = tmpfile();
-        $reqp = $this->prophesize('Abdullahhafizh\Awal\CopyRequest');
+        $reqp = $this->prophesize('Hirak\Prestissimo\CopyRequest');
         $reqp->getCurlOptions()->willReturn(array(
             CURLOPT_URL => 'file://uso800.txt',
             CURLOPT_FILE => $tmpfile,

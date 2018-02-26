@@ -1,9 +1,10 @@
 <?php
 /*
- * abdullahhafizh\awal
- * @author Abdullah Hafizh
+ * hirak/prestissimo
+ * @author Hiraku NAKANO
+ * @license MIT https://github.com/hirak/prestissimo
  */
-namespace Abdullahhafizh\Awal;
+namespace Hirak\Prestissimo;
 
 use Composer\Composer;
 use Composer\IO;
@@ -52,7 +53,7 @@ class Plugin implements
     {
         // @codeCoverageIgnoreStart
         // guard for self-update problem
-        if (__CLASS__ !== 'Abdullahhafizh\Awal\Plugin') {
+        if (__CLASS__ !== 'Hirak\Prestissimo\Plugin') {
             return $this->disable();
         }
         // guard for missing curl extension problem

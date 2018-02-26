@@ -1,5 +1,5 @@
 <?php
-namespace Abdullahhafizh\Awal;
+namespace Hirak\Prestissimo;
 
 use Composer\Composer;
 use Composer\DependencyResolver\Operation;
@@ -47,7 +47,7 @@ class PluginTest extends \PHPUnit_Framework_TestCase
         $code = file_get_contents('src/Plugin.php');
         $code = preg_replace('{^((?:final\s+)?(?:\s*))class\s+(\S+)}mi', '$1class $2_composer_tmp1', $code);
         eval('?' . '>' . $code);
-        $class = 'Abdullahhafizh\\Awal\\Plugin_composer_tmp1';
+        $class = 'Hirak\\Prestissimo\\Plugin_composer_tmp1';
 
         $plugin = new $class;
         $plugin->activate($this->composerp->reveal(), $this->iop->reveal());
@@ -59,7 +59,7 @@ class PluginTest extends \PHPUnit_Framework_TestCase
         $plugin = new Plugin;
         $plugin->activate($this->composerp->reveal(), $this->iop->reveal());
 
-        self::assertTrue(class_exists('Abdullahhafizh\Awal\CopyRequest', false));
+        self::assertTrue(class_exists('Hirak\Prestissimo\CopyRequest', false));
     }
 
     public function testGetSubscribedEvent()

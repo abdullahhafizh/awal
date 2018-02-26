@@ -1,5 +1,5 @@
 <?php
-namespace Abdullahhafizh\Awal;
+namespace Hirak\Prestissimo;
 
 use Composer\IO\IOInterface;
 use Prophecy\Argument as arg;
@@ -20,7 +20,7 @@ class PrefetcherTest extends \PHPUnit_Framework_TestCase
 
     public function testFetchAllOnFailure()
     {
-        $reqp = $this->prophesize('Abdullahhafizh\Awal\CopyRequest');
+        $reqp = $this->prophesize('Hirak\Prestissimo\CopyRequest');
         $reqp->getMaskedURL()->willReturn('file://' . __DIR__ . '/test.txt');
         $reqp->getCurlOptions()->willReturn(array(
             CURLOPT_URL => 'file://uso800.txt',
@@ -34,7 +34,7 @@ class PrefetcherTest extends \PHPUnit_Framework_TestCase
 
     public function testFetchAllOnSuccess()
     {
-        $reqp = $this->prophesize('Abdullahhafizh\Awal\CopyRequest');
+        $reqp = $this->prophesize('Hirak\Prestissimo\CopyRequest');
         $reqp->getCurlOptions()->willReturn(array(
             CURLOPT_URL => 'file://' . __DIR__ . '/test.txt',
             CURLOPT_FILE => tmpfile(),

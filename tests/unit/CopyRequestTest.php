@@ -1,5 +1,5 @@
 <?php
-namespace Abdullahhafizh\Awal;
+namespace Hirak\Prestissimo;
 
 use Prophecy\Argument as arg;
 
@@ -47,10 +47,10 @@ class CopyRequestTest extends \PHPUnit_Framework_TestCase
             // if is_dir(destination) then throws exception
             $req = new CopyRequest('http://example.com/', $tmpdir, false, $this->iop->reveal(), $this->configp->reveal());
             rmdir($tmpdir);
-            $this->fail('expectedException: \Abdullahhafizh\Awal\Prefetcher\FetchException');
+            $this->fail('expectedException: \Hirak\Prestissimo\Prefetcher\FetchException');
         } catch (\Exception $e) {
             rmdir($tmpdir);
-            $this->assertInstanceOf('Abdullahhafizh\Awal\FetchException', $e);
+            $this->assertInstanceOf('Hirak\Prestissimo\FetchException', $e);
             $this->assertContains('Directory exists', $e->getMessage());
         }
     }

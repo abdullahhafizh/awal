@@ -1,5 +1,5 @@
 <?php
-namespace Abdullahhafizh\Awal;
+namespace Hirak\Prestissimo;
 
 class CurlRemoteFilesystemTest extends \PHPUnit_Framework_TestCase
 {

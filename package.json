@@ -1,5 +1,5 @@
 {
-  "name": "abdullahhafizh-awal",
+  "name": "hirak-prestissimo",
   "scripts": {
     "test": "vendor/bin/phpunit --colors=always",
     "start": "gulp start"

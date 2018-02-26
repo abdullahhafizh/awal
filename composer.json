@@ -1,16 +1,12 @@
 {
-    "name": "abdullahhafizh/awal",    
-    "version": "1.0.0",
+    "name": "abdullahhafizh/awal",
     "authors": [
         {
             "name": "Abdullah Hafizh",
             "email": "abdllhhafizh@gmail.com"
         }
     ],
-    "description": "My first Composer project",
-    "minimum-stability": "stable",
-    "type": "library",
-    "keywords": ["example", "first-project", "for-study", "sample", "test", "tutorial"],
+    "license": "GPL-3.0",
     "require": {
         "php": "^5.3.2 || ^7.0",
         "ext-curl": "*",
@@ -29,11 +25,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Abdullahhafizh\\Awal\\": "src/"
+            "Hirak\\Prestissimo\\": "src/"
         }
     },
     "extra": {
-        "class": "Abdullahhafizh\\Awal\\Plugin"
+        "class": "Hirak\\Prestissimo\\Plugin"
     },
     "config": {
         "platform": {

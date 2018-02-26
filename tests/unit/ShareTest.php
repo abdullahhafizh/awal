@@ -1,5 +1,5 @@
 <?php
-namespace Abdullahhafizh\Awal;
+namespace Hirak\Prestissimo;
 
 class ShareTest extends \PHPUnit_Framework_TestCase
 {
