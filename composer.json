@@ -1,8 +1,5 @@
 {
     "name": "hirak/prestissimo",
-    "description": "composer parallel install plugin",
-    "type": "composer-plugin",
-    "keywords": ["parallel", "install", "speedup"],
     "authors": [
         {
             "name": "Hiraku NAKANO",
